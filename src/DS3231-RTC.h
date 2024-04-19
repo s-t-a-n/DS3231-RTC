@@ -28,6 +28,9 @@
 #define NTP_OFFSET 3155673600UL
 #endif
 
+namespace DS3231 {
+
+
 // DateTime class restructured by using standardized time functions
 class DateTime {
     public:
@@ -253,4 +256,6 @@ class DS3231 {
         // which == false -> 0x0e, true->0x0f.
         void writeControlByte(byte control, bool which);		
 };
+
+} // end of namespace DS3231
 #endif

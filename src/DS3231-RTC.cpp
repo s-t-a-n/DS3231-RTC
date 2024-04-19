@@ -12,6 +12,8 @@
 #include <pgmspace.h>
 #endif
 
+namespace DS3231 {
+
 // *****************************************
 //  Static Functions only used in this file 
 // *****************************************
@@ -893,3 +895,5 @@ void DS3231::writeControlByte(byte control, bool which) {
     _Wire.write(control);
     _Wire.endTransmission();
 }
+
+} // end of namespace DS3231
